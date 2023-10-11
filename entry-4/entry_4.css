@@ -34,7 +34,6 @@ h3 {
 p {
   font-size: 25px;
   text-align: center;
-  border-radius: 40px;
   line-height: 35px;
   margin: auto;
   padding: 20px;
@@ -81,7 +80,7 @@ p {
 
 .menu {
   background-color: rgba(250, 235, 215, 0.6);
-  left: 10px;
+  left: 50px;
   position: fixed;
   top: 16px;
   width: 10%;
@@ -143,4 +142,9 @@ img {
   border-radius: 5px;
   box-shadow: 0 2px 4px antiquewhite;
 }
-
+.material-icons {
+  position:fixed;
+  top: 13px;
+  color:antiquewhite;
+  left: 20px;
+}
