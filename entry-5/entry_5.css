@@ -20,37 +20,53 @@ h2 {
   letter-spacing: 10px;
   text-shadow: 3px 3px 1px antiquewhite;
   margin-bottom: 0px;
+  color:rgba(128, 128, 0, 0.5);
 }
 h3 {
   text-align: left;
   font-size: 50px;
   letter-spacing: 10px;
-  text-decoration: overline antiquewhite;
+  text-decoration: overline;
   color: antiquewhite;
-  text-shadow: 10px 8px 5px rgb(60, 87, 64);
+  opacity: 90%;
+  text-shadow: 5px 5px 1px olive;
 }
 
 a {
   display:hidden;
+  color:olive;
 }
 .entrytop {
-  background-color: rgb(60, 87, 64, 0.6);
+  background-color: rgba(128, 128, 0, 0.8);
   position:fixed;
   width: 100%;
   top: 0px;
+  left: 0px;
   height: 50px;
   z-index: 2;
 }
 
 .menu {
-  background-color: rgba(250, 235, 215, 0.6);
-  left: 50px;
+  background-color: rgba(250, 235, 215, 0.8);
+  left: 40px;
   position: fixed;
   top: 16px;
   width: 10%;
   z-index: 2;
   max-height:20px;
   min-width: 88px;
+}
+.menu p {
+  font-size: 15px;
+  color: olive;
+  text-align: center;
+  line-height: 15px;
+  margin: auto;
+  background-color: rgba(250, 235, 215, 0.7);
+  border-style:double;
+  border-color: rgba(128, 128, 0);
+  border-width: 5px;
+  border-radius: 0px;
 }
 
 .inset-border {
@@ -222,7 +238,7 @@ body {
   position:fixed;
   top: 13px;
   color:antiquewhite;
-  left: 20px;
+  left: 10px;
 }
 p {
   font-size: 15px;
@@ -233,4 +249,7 @@ p {
   border-style:double;
   border-color: rgb(60, 87, 64, .8);
   border-width: 5px;
+}
+summary {
+  color:olive;
 }

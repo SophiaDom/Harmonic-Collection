@@ -11,6 +11,8 @@ h1 {
   font-size: 20px;
   letter-spacing: 20px;
   color: antiquewhite;
+  text-align:right;
+  width: 100%;
 }
 
 h2 {
@@ -44,13 +46,6 @@ p {
   border-width: 5px;
 }
 
-.entry_3 {
-  background: url('background_tree.jpg') repeat-y center fixed;
-  background-size: cover;
-  height: 100%;
-  overflow: hidden;
-}
-
 .description3 {
   float:left;
   top:-50px;
@@ -72,7 +67,9 @@ p {
 
 .entrytop {
   background-color: rgb(60, 87, 64);
+  opacity: 80%;
   position:fixed;
+  left:0;
   width: 100%;
   top: 0px;
   height: 50px;
@@ -81,11 +78,26 @@ p {
 
 .menu {
   background-color: rgba(250, 235, 215, 0.6);
-  left: 10px;
+  opacity: 80%;
+  left: 40px;
   position: fixed;
   top: 16px;
   width: 10%;
   z-index: 2;
+  max-height:20px;
+  min-width: 80px;
+}
+.menu p {
+  font-size: 15px;
+  text-align: center;
+  line-height: 20px;
+  margin: auto;
+  padding: 5px;
+  background-color: rgba(250, 235, 215, 0.7);
+  border-style:double;
+  border-color: rgb(60, 87, 64, .8);
+  border-width: 5px;
+  border-radius: 0px;
 }
 
 .inset-border {
@@ -147,5 +159,5 @@ img {
   position:fixed;
   top: 13px;
   color:antiquewhite;
-  left: 20px;
+  left: 10px;
 }

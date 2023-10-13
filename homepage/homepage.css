@@ -7,6 +7,7 @@
 .entrytop {
   background-color: rgb(60, 87, 64, .6);
   position:fixed;
+  left:0;
   width: 100%;
   top: 0px;
   height: 50px;
@@ -15,7 +16,7 @@
 
 .menu {
   background-color: rgba(250, 235, 215, 0.6);
-  left: 50px;
+  left: 40px;
   position: fixed;
   top: 16px;
   width: 10%;
@@ -44,7 +45,7 @@ h2 {
   position:fixed;
   top: 13px;
   color:antiquewhite;
-  left: 20px;
+  left: 10px;
 }
 body {
   background-image: url(background.jpg);
@@ -62,7 +63,7 @@ p {
   line-height: 20px;
   margin: auto;
   padding: 10px;
-  background-color: rgba(250, 235, 215, 0.8);
+  background-color: rgba(250, 235, 215, 0.7);
   border-style:double;
   border-color: rgb(60, 87, 64, .8);
   border-width: 5px;
