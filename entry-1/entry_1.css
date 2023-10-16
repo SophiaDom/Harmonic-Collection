@@ -1,10 +1,11 @@
 body {
-  background-color: darkkhaki;
+  background-image: url("images/background.jpg");
+  background-size: cover;
+  background-repeat: repeat-y;
 }
 
 * {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: rgb(60, 87, 64);
 }
 
 h1 {
@@ -15,11 +16,12 @@ h1 {
 }
 
 h2 {
+  color:antiquewhite;
   text-decoration: underline;
   font-size: 100px;
   text-align: center;
   letter-spacing: 10px;
-  text-shadow: 3px 3px 1px antiquewhite;
+  text-shadow: 5px 5px 2px rgb(60, 87, 64, 0.7);
   margin-bottom: 0px;
 }
 
@@ -46,7 +48,7 @@ p {
 
 .entrytop {
   background-color: antiquewhite;
-  opacity: 60%;
+  opacity: 80%;
   position:fixed;
   left: 0;
   width: 100%;
@@ -56,7 +58,7 @@ p {
 }
 
 .menu {
-  background-color: rgb(60, 87, 64, 0.7);
+  background-color: rgb(60, 87, 64, 0.8);
   left: 40px;
   position: fixed;
   top: 16px;
@@ -76,7 +78,8 @@ summary {
   padding: 5px;
   background-color: rgba(250, 235, 215, 0.7);
   border-style:double;
-  border-color: rgb(60, 87, 64);
+  color: rgb(60, 87, 64, 0.8);
+  border-color: rgb(60, 87, 64, 0.8);
   border-width: 5px;
   border-radius: 0px;
 }
