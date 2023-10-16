@@ -27,7 +27,7 @@ h1 {
   justify-content: center;
   align-items: center;
   font-size: 120px;
-  font-weight:900;
+  font-weight:600;
   -webkit-text-stroke: 4px yellowgreen;
   -webkit-text-fill-color: transparent;
   text-shadow: 
@@ -110,7 +110,7 @@ color:#6b9023;
   float:left;
   top: 500px;
   height: 8rem;
-  width: 100%;
+  width: 80%;
   overflow: hidden;
   display: block;
   border: 1px #6b9023;
@@ -180,8 +180,6 @@ summary {
   padding: 20px;
   margin-bottom: 20px;
 }
-
-
 img {
   align-self: center;
   width: 86vw;
