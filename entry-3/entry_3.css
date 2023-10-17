@@ -26,7 +26,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 120px;
+  font-size: 150px;
   font-weight:600;
   -webkit-text-stroke: 4px yellowgreen;
   -webkit-text-fill-color: transparent;
@@ -47,29 +47,8 @@ h3 {
   font-size: 60px;
   letter-spacing: 15px;
   text-decoration: overline;
-  color: #6b9023;
-  text-shadow: 6px 6px 4px antiquewhite;
-}
-.lineUp {
-  animation: 3s anim-lineUp ease-out;
-}
-
-@keyframes anim-lineUp {
-  0% {
-    opacity: 0;
-    transform: translateY(80%);
-  }
-  20% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0%);
-  }
+  color: antiquewhite;
+  text-shadow: 6px 6px 4px #6b9023;
 }
 
 p {
@@ -78,44 +57,32 @@ p {
   align-self: center;
   line-height: 35px;
   margin: auto;
-  margin-right: 11%;
-  margin-left: 5%;
   padding: 20px;
   background-color: rgba(250, 235, 215, 0.8);
   border-style:double;
   border-color: #6b9023;
   border-width: 5px;
   color:#6b9023;
+  width: 60vw;
 }
 b, a {
 color:#6b9023;
 }
-
+.description-container {
+  display: flex;
+  flex-direction: column;
+}
 
 .description3 {
-  float:right;
-  top:-50px;
-  right:100px;
-  height: 19rem;
-  width: 100%;
-  overflow: hidden;
-  display: block;
-  border: 1px #6b9023;
-  padding:0;
-  margin-bottom: 16px;
-  letter-spacing: 1px;
-  word-spacing:0%;
+  position:absolute;
+  left: 1vw;
+  top:50vh;
+  max-width: 20vw;
 }
 .minidescription {
-  float:left;
-  top: 500px;
-  height: 8rem;
-  width: 80%;
-  overflow: hidden;
-  display: block;
-  border: 1px #6b9023;
-  padding:0;
-  margin-bottom: 16px;
+  position: absolute;
+  right: 5vw;
+  top:100vh;
 }
 
 .entrytop {
@@ -133,14 +100,17 @@ color:#6b9023;
   left: 40px;
   position: fixed;
   top: 16px;
-  width: 10%;
+  width: 11%;
   z-index: 2;
-  max-height:20px;
+  max-height: 20px;
+  min-height: 20px;
+  line-height: 24px;
   min-width: 80px;
 }
 summary {
   color:antiquewhite;
   background-color: rgba(154, 205, 50, 0.5);
+  font-size: 15px;
 }
 
 .menu p {
@@ -149,12 +119,14 @@ summary {
   text-align: center;
   line-height: 20px;
   margin: auto;
-  padding: 5px;
+  padding: 3px;
   background-color: RGB(250, 235, 215, 0.8);
   border-style:double;
   border-color: rgba(154, 205, 50, 0.8);
   border-width: 5px;
   border-radius: 0px;
+  width:80px;
+  text-decoration: none;
 }
 .inset-border {
   border: 10px inset antiquewhite;
@@ -179,6 +151,10 @@ summary {
   align-items: center;
   padding: 20px;
   margin-bottom: 20px;
+}
+.image-text-1 {
+  text-align: center;
+  margin: auto;
 }
 img {
   align-self: center;
