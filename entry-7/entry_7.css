@@ -164,13 +164,6 @@ span:hover:after {
 section {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  grid-template-areas:
-    "orange1 orange2 orange3"
-    "paragraph1 paragraph1 paragraph1"
-    "paths1 paths2 paths3"
-    "paragraph2 paragraph2 paragraph2"
-    "water1 water2 water3"
-    "paragraph3 paragraph3 paragraph3";
   gap: 25px; 
 }
 
