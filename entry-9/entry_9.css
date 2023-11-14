@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+body {
+  background-image: url(images/background.jpg);
+}
+body, section{
+  padding: 10px;
+  padding-top: 60px;
+  padding-bottom: 30px;;
+}
+* {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: antiquewhite;
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 20px;
+  letter-spacing: 20px;
+  color: antiquewhite;
+  text-align: right;
+  position: relative;
+  top: 10px;
+}
+
+a {
+  display:hidden;
+  color:#64451b;
+  text-decoration: none;
+}
+#special-link{
+  text-decoration: underline antiquewhite;
+}
+.entrytop {
+  background-color:rgba(100, 69, 27, 0.9);
+  position:fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  height: 50px;
+  z-index: 2;
+}
+
+.menu {
+  background-color: rgba(250, 235, 215, 0.7);
+  left: 40px;
+  position: fixed;
+  top: 16px;
+  width: 10%;
+  z-index: 2;
+  max-height:20px;
+  min-width: 88px;
+}
+.menu p {
+  font-size: 15px;
+  color:#64451b;
+  font-weight: 400;
+  text-align: center;
+  line-height: 15px;
+  margin: auto;
+  background-color: rgba(250, 235, 215, 0.7);
+  border-style:double;
+  border-color: #64451b;
+  border-width: 5px;
+  padding: 5px;
+  letter-spacing: 0px;
+}
+
+.spotify-container {
+display: flex;
+justify-content: right;
+align-items: right;
+height: 100px;
+opacity: 80%;
+width: 100%;
+autoplay: auto;
+
+}
+body {
+  background-image: url(images/background.jpg);
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  background-position: center center;
+}
+.material-icons {
+  position:fixed;
+  top: 13px;
+  color:antiquewhite;
+  left: 10px;
+}
+summary {
+  color:#64451b;
+}
+section {
+  background-image:url(images/rowhomes.jpeg);
+  background-size: cover;
+  padding-top: 200px;
+  background-repeat: no-repeat;
+  border:10px double#64451b;
+}
+h2 {
+  font-size: 400%;
+  text-shadow: 6px 6px 8px  #64451b;
+}
+p {
+  background-color: rgba(100, 69, 27, 0.7);
+  padding: 10px;
+  font-size:100%;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(calc(33.33% - 20px), 1fr));
+  gap: 20px;
+}
+.grid-item{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  overflow: hidden;
+}
+.grid-item img{
+  max-width: 100%;
+  max-height: 100%
+  object-fit: cover;
+  object-position: center;
+  border: 6px double #64451b;
+
+}
+img {
+  width: 100%;
+  height: auto;
+  grid-column: span 1;
+  grid-row: span 1;
+}
