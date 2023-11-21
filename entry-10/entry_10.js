@@ -1,34 +1,37 @@
-const countdown = () => {
-  const countDate = new Date('July 28, 2028 00:00:00').getTime();
-  const now = new Date();
-  const gap = countDate - now;
+document.addEventListener("DOMContentLoaded", function () {
+  const imageArray = [
+    "images/boat.jpg",
+    "images/cityscape.jpg",
+    "images/inland.jpg",
+    "images/littleisland.jpg",
+    "images/pathway.jpg",
+    "images/statueliberty.jpg",
+    "images/vine.jpg",
+    "images/water.jpg",
+    "images/woodspike.jpg",
+  ];
 
-  const second = 1000;
-  const minute = second * 60;
-  const hour = minute * 60;
-  const day = hour * 24;
-  const year = day * 365
-
-  const textYear = Math.floor(gap / year);
-  const textDay = Math.floor((gap % year) / day);
-  const textHour = Math.floor((gap % day) / hour);
-  const textMinute = Math.floor((gap % hour) / minute);
-  const textSecond = Math.floor((gap % minute) / second);
-
-  document. querySelector('.year').innerText =textYear;
-  document. querySelector('.day').innerText =textDay;
-  document. querySelector('.hour').innerText =textHour;
-  document. querySelector('.minute').innerText =textMinute;
-  document. querySelector('.second').innerText =textSecond;
-};
-
-setInterval(countdown, 1000);
-
-var counter = 1;
-setIntercal(function(){
-  document.getElementById('radio' + counter).checked = true;
-  counter++;
-  if(counter > 8){
-    counter = 1;
+  function getRandomImage() {
+    return imageArray[Math.floor(Math.random() * imageArray.length)];
   }
-}, 5000);
+
+  function displayRandomImage() {
+    const image = document.createElement("img");
+    image.src = getRandomImage();
+    
+    image.classList.add('active');
+    
+    const activeImages = document.querySelectorAll('.active');
+    activeImages.forEach(activeImage => {
+      activeImage.classList.remove('active');
+    });
+
+    document.body.appendChild(image);
+    
+    void image.offsetWidth;
+  }
+
+  displayRandomImage();
+
+  setInterval(displayRandomImage, 3000);
+});
