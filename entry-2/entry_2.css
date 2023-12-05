@@ -162,6 +162,22 @@ img {
   border: 10px double antiquewhite;
   border-radius: 5px;
   box-shadow: 0 2px 4px antiquewhite;
+  opacity:1;
+  animation: fadeInOut 4s infinite alternate;
+}
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  img {
+    max-width: 40vw; /* Adjust the maximum width for larger screens */
+  }
 }
 .material-icons {
   position:fixed;

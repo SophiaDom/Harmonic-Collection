@@ -1,5 +1,10 @@
 body {
-  background-color: rgb(156, 78, 22, 0.7);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
 }
 * {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -16,15 +21,43 @@ h1 {
   position: relative;
   top: 10px;
 }
-
+.section {
+  height: 60vh;
+  @media screen and (min-width: 768px){
+    height: 110vh;
+  }
+  position:relative;
+  overflow: hidden;
+}
+.background {
+  position: absolute;
+  top:0;
+  left: 0;
+  height:400px;
+  background-size: cover;
+  background-position: center;
+  transform: translateZ(0);
+  will-change: transform;
+}
+.content, .countdown{
+  position: relative;
+  top: 10vw;
+  z-index: 1;
+  text-align: center;
+  color:antiquewhite;
+  padding: 20px;
+  margin-bottom: -100vw;
+}
+#special-link{
+  text-decoration: underline antiquewhite;
+  color: white;
+}
 a {
   display:hidden;
   color:rgb(156, 78, 22, 0.8);
   text-decoration: none;
 }
-#special-link{
-  text-decoration: underline antiquewhite;
-}
+
 .entrytop {
   background-color:rgb(156, 78, 22, 0.6);
   position:fixed;
@@ -67,11 +100,11 @@ align-items: right;
 height: 100px;
 opacity: 80%;
 width: 100%;
-autoplay: auto;
 
 }
 body {
-  background-image: url(images/background.jpg);
+  background:  url(images/bg1.jpg);
+  background-color:rgb(156, 78, 22, 0.5);
   background-size: cover;
   background-repeat: repeat-y;
   background-attachment: fixed;
@@ -88,207 +121,81 @@ summary {
 }
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 h3 {
-  font-size: 1rem;
+  font-size: 3vw;
   color:antiquewhite;
   font-weight: bold;
   padding: 1rem;
   font-family:'Black Ops One';
+  text-shadow:2px 2px 2px rgb(156, 78, 22);
 }
-.countdown-container{
-  min-height:100vh;
-  display:flex;
-  ailgn-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
+
 .countdown {
   display:flex;
   justify-content: space-around;
   text-align: center;
   text-transform: uppercase;
 }
+
 .year,
 .day,
 .hour,
 .minute,
 .second {
-  font-size: 3.5rem;
+  font-size: 4rem;
 }
-.container {
-  position:relative;
-  width: 100vw;
-  height: 100vh;
-  overflow: auto;
-}
-.container .section{
-  position: relative;
-  width: 100vw;
-  height:100vh;
-  background-blend-mode: multiply;
-  margin-bottom: 30px;
-}
+
+
 .container .section .countdown{
-  position: absolute;
+  /* position: absolute; */
   top: 50vh;
   left:43vw;
   transform: translate(-50%, -50%);
-  font-size:3em;
+  font-size:4em;
   overflow:hidden;
 }
-.container .section:nth-child(1){
-  background:#e99b63  url(images/bg1.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  align-content: center;
-}
-.container .section:nth-child(2){
-  background:#e99b63  url(images/bg2.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-}
-.container .section:nth-child(3){
-  background: #e99b63  url(images/bg3.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-}
-.container .section:nth-child(4){
-  background: #e99b63;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 125vh;
-}
-.container .section .content {
-  position: absolute;
-  bottom: 50px;
-  left: 50px;
-  max-width: 700px;
-}
-.container .section .content h4{
-  background:transparent;
-  color:antiquewhite;
-  text-transform:uppercase;
-  font-weight: 600;
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 4em;
-}
-.container .section .content p{
-  background: rgba(250, 235, 215, 0.7);
-  color:rgb(156, 78, 22);
-  font-weight: 350;
-  padding: 10px 20px;
-  margin-top: 10px;
-  letter-spacing: 1px;
-  line-height: 20px;
+
+@media screen and (max-width: 767px) {
+  h3 {
+    font-size: 8vw; /* Adjust the font size for smaller screens using viewport units */
   }
-.slider {
-  width: 500px;
-  height: 800px;
-  border-radius: 10px;
-  overflow: hidden;
-  margin-left: 15vw;
-}
-.slides {
-  width: 500%;
-  height: 800px;
-  display: flex;
-}
-.slides input {
-  display: none;
-}
-.slide{
-  width:800px;
-  transition: 3s;
-}
-.slide img{
-  width: 500px;
-  height: 800px;
+  .countdown h3{
+    font-size: 3.5vw;
+  }
 }
 
-.navigation-manual{
-  position: absolute;
-  width:500px;
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
+h4{
+  text-align:left;
+  font-size: 8vw;
 }
-.manual-btn{
-  border: 2px solid antiquewhite;
-  padding: 5px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 1s;
-}
-.manual-btn:not(:last-child){
-  margin-right: 40px;
-}
-.manula-btn:hover{
-  background: antiquewhite;
-}
-#radio1:checked ~ .first{
-  margin-left:0;
-}
-#radio2:checked ~ .first{
-  margin-left:-20%;
-}
-#radio3:checked ~ .first{
-  margin-left:-40%;
-}
-#radio4:checked ~ .first{
-  margin-left:-60%;
-}
-#radio5:checked ~ .first{
-  margin-left:-100%;
-}
-#radio6:checked ~ .first{
-  margin-left:-160%;
-}
-#radio7:checked ~ .first{
-  margin-left:-192%;
-}
-#radio8:checked ~ .first{
-  margin-left:-224%;
+p{
+  text-align: right;
+  background-color:rgba(100, 110, 0, 0.3);
+  padding: 20px;
+  font-size: 2vw;
 }
 
-.navigation-auto{
-  position: absolute;
-  display:flex;
-  width: 800px;
-  justify-content: center;
-  margin-top: 820px;
-  margin-left: -150px;
+img{
+  width: 24.6%;
+  height: auto;
+  margin: 0 auto;
 }
-.navigation-auto div{
-  border: 2px solid antiquewhite;
-  padding: 5px;
-  border-radius: 10px;
-  transition: 1s;
-}
-.navigation-auto div:not(:last-child){
-  margin-right: 40px;
-}
-#radio1:checked ~ .navigation-auto .auto-btn1{
-  background:antiquewhite;
-}
-#radio2:checked ~ .navigation-auto .auto-btn2{
-  background:antiquewhite;
-}
-#radio3:checked ~ .navigation-auto .auto-btn3{
-  background:antiquewhite;
-}
-#radio4:checked ~ .navigation-auto .auto-btn4{
-  background:antiquewhite;
-}
-#radio5:checked ~ .navigation-auto .auto-btn5{
-  background:antiquewhite;
-}
-#radio6:checked ~ .navigation-auto .auto-btn6{
-  background:antiquewhite;
-}
-#radio7:checked ~ .navigation-auto .auto-btn7{
-  background:antiquewhite;
-}
-#radio8:checked ~ .navigation-auto .auto-btn8{
-  background:antiquewhite;
-}
+@keyframes bounce { 
+  0%, 
+  20%, 
+  50%, 
+  80%, 
+  100% { 
+      transform: translateY(0); 
+  } 
 
+  40% { 
+      transform: translateY(-30px); 
+  } 
+
+  60% { 
+      transform: translateY(-15px); 
+  } 
+} 
+p { 
+  animation: bounce 5s infinite; 
+} 

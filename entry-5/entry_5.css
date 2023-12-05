@@ -10,7 +10,7 @@
   box-sizing: border-box;
 }
 :root {
-  --color-primary: #999900;
+  --color-primary: rgba(250, 235, 215, 0.7);;
   --color-secondary: #cccc00;
   --color-tertiary: #666600;
   --color-quaternary: #4d4d00;
@@ -246,12 +246,12 @@ a {
 }
 .directions {
 position: relative; 
-top: -45px;
-width: 35vw;
+top: -65px;
+width: 25vw;
 margin: auto;
 }
 .directions p {
-  font-size: 3vw;
+  font-size: 2vw;
   padding: 10px;
   border-style: none;
   color: antiquewhite;
@@ -284,7 +284,7 @@ margin: auto;
   min-height: 200px;
   max-height: 100%; 
   object-fit: cover;
-  border: 5px dashed rgba(250, 235, 215, 0.7);
+  border: 15px double rgba(250, 235, 215, 0.7);
 }
 
 .card .img-below {
@@ -299,7 +299,7 @@ margin: auto;
   min-width: 140px;
   min-height: 200px;
   object-fit: cover;
-  border: 5px dotted rgba(250, 235, 215, 0.7);
+  border: 15px double rgba(250, 235, 215, 0.7);
 }
 @media screen and (max-width: 600px;) {
   .row1 {

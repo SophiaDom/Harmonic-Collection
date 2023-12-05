@@ -157,7 +157,6 @@ summary {
   display: inline-block;
   animation: marquee 30s linear infinite; 
   animation-delay: -10s;
-  animation-iteration-count: 999;
 }
 .marquee-content:hover{
   animation-play-state: paused;
@@ -168,6 +167,7 @@ summary {
   margin: 0 50px;
   border-style: groove antiquewhite;
 }
+
 .two {
   background-color: rgba(218, 165, 32, 0.5);
   display: relative;
@@ -178,6 +178,7 @@ summary {
   justify-content: center;
   text-align: center;
   width:auto;
+  
 }
 .two p {
   font-size: 2.5vw;
